@@ -29,11 +29,6 @@
 #include "tegra3_emc.h"
 #include <mach/board-cardhu-misc.h>
 
-#ifdef CONFIG_VOLTAGE_CONTROL
-int user_mv_table[MAX_DVFS_FREQS] = {
-800, 825, 850, 875, 900, 912, 975, 1000, 1025, 1050, 1075, 1100, 1125, 1150, 1165, 1185, 1200, 1237};
-#endif
-
 static bool tegra_dvfs_cpu_disabled;
 static bool tegra_dvfs_core_disabled;
 static struct dvfs *cpu_dvfs;
